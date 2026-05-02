@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #111111;
+  font-family: "Times New Roman", "Noto Serif SC", serif;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+a {
+  color: #4e78c8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  width: calc(100% - 24px);
+  margin: 0 auto;
+  padding: 12px 0 40px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.sidebar {
+  border: 1px solid #d0d0d0;
+  padding: 14px 14px 10px;
+  position: sticky;
+  top: 12px;
+}
+
+.sidebar h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.main {
+  min-width: 0;
+}
+
+.site-header {
+  border-bottom: 1px solid #777777;
+  margin-bottom: 24px;
+  padding-bottom: 8px;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+  margin-bottom: 30px;
+}
+
+.intro-photo {
+  width: 150px;
+}
+
+.intro-photo img {
+  display: block;
+  width: 150px;
+  height: 188px;
+  object-fit: cover;
+  border: 1px solid #d0d0d0;
+}
+
+.intro-text p {
+  margin: 0 0 6px;
+}
+
+.content-section {
+  margin-bottom: 30px;
+}
+
+.content-section h2 {
+  margin: 0 0 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #c9c9c9;
+  color: #4e78c8;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.content-section h3 {
+  margin: 14px 0 8px;
+  color: #4e78c8;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.content-section p {
+  margin: 0 0 10px;
+}
+
+ul,
+ol {
+  margin: 0 0 12px 22px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+li ul {
+  margin-top: 8px;
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 16px;
+  }
+
+  .page {
+    width: calc(100% - 16px);
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .intro-photo,
+  .intro-photo img {
+    width: 140px;
+    height: 175px;
+  }
+
+  .site-header h1 {
+    font-size: 24px;
+  }
+}
